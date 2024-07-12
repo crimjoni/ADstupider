@@ -54,11 +54,6 @@ export class DimBoost {
   }
 
   static get maxBoosts() {
-    if (Ra.isRunning) {
-      // Ra makes boosting impossible. Note that this function isn't called
-      // when giving initial boosts, so the player will still get those.
-      return 0;
-    }
     if (InfinityChallenge(1).isRunning) {
       // Usually, in Challenge 8, the only boosts that are useful are the first 5
       // (the fifth unlocks sacrifice). In IC1 (Challenge 8 and Challenge 10
