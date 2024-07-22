@@ -39,6 +39,15 @@ export const ra = {
       requiredUnlock: () => Ra.unlocks.vUnlock,
       rawMemoryChunksPerSecond: () => 4 * Math.pow(Currency.infinityPower.value.pLog10() / 1e7, 1.5),
       memoryProductionMultiplier: () => Ra.unlocks.vXP.effectOrDefault(1)
+    },
+        raresa: {
+      id: "raresa",
+      name: "Ra and Teresa's Baby",
+      color: "#8a76cf",
+      chunkGain: "Dimension Boosts",
+      memoryGain: "total boobs played",
+      rawMemoryChunksPerSecond: () => 4 * Math.pow(Currency.timeShards.value.pLog10() / 3e5, 2),
+      memoryProductionMultiplier: () => Ra.unlocks.enslavedXP.effectOrDefault(1)
     }
   },
   unlocks: {
